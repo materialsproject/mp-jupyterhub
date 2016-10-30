@@ -1,0 +1,4 @@
+jupyter
+jupyterhub
+dockerspawner
+oauthenticator
