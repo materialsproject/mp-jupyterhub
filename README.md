@@ -16,7 +16,7 @@ First get the Docker image:
 docker pull materialsproject/jupyterhub-singleuser
 ```
 
-Jupyterhub requires Python 3. Either install your OS specific Python 3 or download the Anaconda distribution.
+Jupyterhub requires Python 3. Either install your OS specific [Python 3](https://www.python.org/downloads/) or download the [Anaconda distribution](https://www.continuum.io/downloads).
 
 
 ### Install and Setup
@@ -30,7 +30,7 @@ Jupyterhub requires Python 3. Either install your OS specific Python 3 or downlo
 
 2. Setup your OAuth tokens in Github via https://github.com/settings/developers
    - Select "Register a New Application"
-   - Make sure you fill out the callback URL as https://<yourdomain.org>/hub/oauth_callback
+   - Make sure you fill out the callback URL as https://<yourdomain.org>/hub/oauth_callback (use http is you don't have SSL enabled)
    - Once registered note the Client ID and Client Secret
 
 3. Edit `run/env.sh` and enter `GITHUB_CLIENT_SECRET`, `GITHUB_CLIENT_ID` and `OAUTH_CALLBACK_URL` from above
