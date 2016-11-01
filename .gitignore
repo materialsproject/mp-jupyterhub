@@ -1,2 +1,3 @@
-run/env.sh
-run/userlist
+*.sqlite
+jupyterhub_cookie_secret
+userlist
