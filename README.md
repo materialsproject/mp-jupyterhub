@@ -8,7 +8,13 @@ It uses Github OAuth to authenticate users.
 ### Prerequisistes
 - Python 3
 - Docker
+- Node.js
 - A Github Account
+
+
+Jupyterhub requires Python 3. Either install your OS specific [Python 3](https://www.python.org/downloads/) or download the [Anaconda distribution](https://www.continuum.io/downloads).
+
+You can get node.js from https://nodejs.org/en/
 
 
 First get the Docker image: 
@@ -16,13 +22,11 @@ First get the Docker image:
 docker pull materialsproject/jupyterhub-singleuser
 ```
 
-Jupyterhub requires Python 3. Either install your OS specific [Python 3](https://www.python.org/downloads/) or download the [Anaconda distribution](https://www.continuum.io/downloads).
-
-
 ### Install and Setup
 
 1. Install the requirements
    ```
+   npm install -g configurable-http-proxy
    pip3 install -r requirements.txt
    ```
    This will install jupyter, jupyterhub, dockerspawner and oauthenticator
