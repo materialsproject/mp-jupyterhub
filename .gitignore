@@ -1,3 +1,4 @@
 *.sqlite
 jupyterhub_cookie_secret
 userlist
+env.sh
